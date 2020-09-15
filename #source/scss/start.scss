@@ -1,0 +1,153 @@
+/*START*/
+.start {
+    display: flex;
+    flex-direction: column;
+	 flex-wrap: wrap;
+	 @media (max-width: 778px){
+	
+		text-align: center;
+	}
+ 
+	& .start__now {
+		background-color: #9577a8;
+		text-align: center;
+		padding: 50px 10px 40px 10px;
+		@media (max-width: $md2+px) {
+			padding: 30px 10px 30px 10px;
+		}
+	}
+
+	& .start__now h2 {
+	 padding-bottom: 25px;
+	 font-family: "Raleway";
+    font-size: 54px;
+	 font-weight: 300;
+	 @media (max-width: $md2+px) {
+		padding-bottom: 20px;
+		font-size: 46px;
+		}
+	}
+
+	& .start__now p {
+		padding-bottom: 45px;
+		font-size: 17px;
+		font-weight: 600;
+	}
+
+	& .start__block {
+		
+
+	}
+
+	& .start__we {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+	 flex-wrap: wrap;
+	  
+	 
+	& .start__block{
+		flex: 1 1 40%;
+	}
+	& .start__text {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+	 max-width: 340px;
+	 line-height: 1.2;
+	 padding-bottom: 20px;
+	 @media (max-width: 778px){
+		 max-width: 100%;
+		 & .btn-tree{
+			display: block;
+			margin: 0 auto;
+		}
+	 }
+		& h3 {
+			text-transform: uppercase;
+			font-family: "Roboto";
+			font-size: 37px;
+			font-weight: 700;
+			padding-bottom: 70px;
+			padding-top: 20px;
+			text-shadow: -5px -17px 3px rgba(98, 98, 98, 0.3);
+			@media (max-width: 778px){
+				padding-bottom: 35px;
+			}
+			& span{
+				text-transform: none;
+				font-family: "Raleway";
+				font-weight: 300;
+				color: #969696;
+			}
+		}
+		&  p {
+		padding-bottom: 25px;
+		font-family: "Calibri";
+		font-weight: 400;
+		}
+		& p:last-of-type{
+			font-size: 16px;
+			color: #595959;
+		}
+		
+	}
+	& .start__we .start__we-body .start__text p:last-of-type {
+		padding-bottom: 50px;
+	}
+
+	&  .start__we-foto .foto img {
+		max-width: 455px;
+		@media (max-width: 778px){
+			
+		}
+		
+	}
+	}
+}
+
+.home__arrow {
+	position: absolute;
+	padding-top: -90px;
+	height: 80px;
+	margin-left: -75px;
+	animation: arrowDown 1s ease infinite alternate 0s;
+}
+
+.home__arrow a {
+	padding: 60px 60px 0 60px;
+}
+
+@keyframes arrowDown {
+	from {
+		 bottom: 0;
+	}
+	to {
+		 bottom: -50px;
+	}
+}
+
+@keyframes zummerPhone {
+	0% {
+		 transform: translateX(2%);
+	}
+	15% {
+		 transform: translateX(5%) rotate(2deg);
+	}
+	30% {
+		 transform: translateX(5%) rotate(3deg);
+	}
+	45% {
+		 transform: translateX(5%) rotate(3deg);
+	}
+	60% {
+		 transform: translateX(5%) rotate(2deg);
+	}
+	75% {
+		 transform: translateX(5%) rotate(2deg);
+	}
+	100% {
+		 transform: translateX(0%);
+	}
+}

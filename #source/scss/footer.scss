@@ -1,0 +1,64 @@
+/*<FOOTER>*/
+.footer {
+    background-color: #212933;
+    padding: 20px 10px 20px 10px;
+	 width: 100%;
+	 @media (max-width: $md3+px){
+		padding: 15px 5px 15px 5px;
+	 }
+}
+ .footer__logo {
+	 @media (max-width: $md3+px){
+	display: none;
+}}
+.footer .footer__row {
+    display: flex;
+    justify-content: space-between;
+	 align-items: center;
+	 @media (max-width: $md3+px){
+		 align-items: flex-end;
+	 }
+    
+}
+
+.footer .footer__link a:hover {
+    opacity: 0.8;
+}
+
+.footer .footer__link .footer__list {
+    display: flex;
+	 flex-direction: row;
+	 @media (max-width: $md2+px){
+		 flex-direction: column;
+		 }
+}
+
+.footer .footer__link .link {
+	 margin-left: 20px;
+	 @media (max-width: $md2+px){
+		 margin-left: 0;
+		 padding-bottom: 10px;
+		 display: flex;
+		 } 
+}
+
+
+
+.footer .footer__contact .contact__list {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.footer .footer__contact .contact__list a {
+    display: flex;
+    padding-bottom: 24px;
+}
+
+.footer .footer__contact .contact__list a:last-child {
+    padding-bottom: 10px;
+}
+
+.footer .footer__contact a:hover {
+    opacity: 0.8;
+}

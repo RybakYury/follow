@@ -1,0 +1,94 @@
+
+		@media (max-width: 767px) {
+			.header__menu {
+				 position: absolute;
+				 width: 30px;
+				 height: 20px;
+				 z-index: 3;
+				 right: 10px;
+				 z-index: 3;
+				 cursor: pointer;
+			}
+			.header__menu::before,
+			.header__menu::after {
+				 content: "";
+				 background-color: #fff;
+				 position: absolute;
+				 width: 100%;
+				 height: 2px;
+				 left: 0;
+				 -webkit-transition: all 0.3s ease 0s;
+				 transition: all 0.3s ease 0s;
+				 z-index: 3;
+				 cursor: pointer;
+			}
+			.header__menu span {
+				 background-color: #fff;
+				 position: absolute;
+				 width: 100%;
+				 height: 2px;
+				 left: 0;
+				 top: 9px;
+				 -webkit-transition: all 0.3s ease 0s;
+				 transition: all 0.3s ease 0s;
+				 
+			}
+			.header__menu.active span {
+				 -webkit-transform: scale(0);
+				 transform: scale(0);
+			}
+			.header__menu::before {
+				 top: 0;
+			}
+			.header__menu::after {
+				 bottom: 0;
+			}
+			.header__menu.active::before {
+				 -webkit-transform: rotate(45deg);
+				 transform: rotate(45deg);
+				 top: 9px;
+			}
+			.header__menu.active::after {
+				 -webkit-transform: rotate(-45deg);
+				 transform: rotate(-45deg);
+				 bottom: 9px;
+			}
+			body.lock {
+				 overflow: hidden;
+			}
+			.menu__body {
+				 position: fixed;
+				 top: -100%;       /*/поставить -100%;/*/
+				 left: 0;
+				 width: 100%;
+				 height: 100%;
+				 overflow: auto;
+				 background-color: rgba(23, 23, 23, 0.81);
+				 z-index: 2;
+				 transition: all 0.5s ease 0s;
+			}
+			.menu__body.active {
+				 top: 0;
+			}
+			.menu__body a {
+				 font-size: 24px;
+				 font-weight: 700;
+				 padding: 0px 0px 44px 0px;
+			}
+			.menu__list{
+				
+			}
+			
+			.menu__body ul li {
+				 padding-top: 30px;
+			}
+			.menu__body ul {
+				 margin-top: 30px;
+				 text-align: center;
+				 
+			}
+			.header .menu__list {
+				flex-direction: column;
+				
+			}
+}

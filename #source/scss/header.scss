@@ -1,0 +1,64 @@
+/*HEADER*/
+.header {
+    position: relative;
+    & .header__foto {
+        background-image: url(../img/background_3.jpg);
+        background-repeat: repeat;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        & .header__row {
+            padding-top: 15px;
+        }
+    }
+    & .header__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    & .menu__list {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        text-transform: uppercase;
+        & a {
+            line-height: 1.2;
+            font-weight: 700;
+            font-family: "Raleway";
+            padding-left: 2px;
+            padding-right: 2px;
+            margin-left: 80px;
+            @media (max-width: 767px) {
+                margin-left: 0;
+            }
+        }
+        & a:hover {
+            border-bottom: 2px solid $fc;
+            @media (max-width: 767px) {
+                border-bottom: none;
+            }
+        }
+    }
+    & .header__body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100%;
+        & h1 {
+            text-align: center;
+            font-family: "Kartika";
+            font-size: 71.5px;
+            font-weight: 700;
+            padding-bottom: 100px;
+            @media (max-width: $md2+px) {
+                font-size: 50px;
+                font-weight: 600;
+                padding-bottom: 50px;
+            }
+            @media (max-width: $md3+px) {
+                font-size: 40px;
+            }
+        }
+    }
+}

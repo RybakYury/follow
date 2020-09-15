@@ -1,0 +1,59 @@
+/*GREEN*/
+
+.green {
+    background-color: rgb(75, 124, 75);
+    padding: 70px 20px 70px 20px;
+    @media (max-width: $md2+px) {
+        padding: 0px 10px 40px 10px;
+    }
+    & .green__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        & .item {
+            display: flex;
+            flex: 0 1 25%;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            cursor: pointer;
+            & p {
+                font-family: "LuganskyV";
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.2;
+                max-width: 235px;
+                padding-top: 34px;
+            }
+            @media (max-width: $md2+px) {
+                flex: 0 1 50%;
+                margin-top: 20px;
+            }
+            @media (max-width: $md3+px) {
+                flex: 0 1 100%;
+                margin-top: 30px;
+            }
+            &:last-of-type {}
+            &:hover::before {
+                content: '';
+                border-radius: 30px;
+                border: 2px dashed #fff;
+                position: absolute;
+                top: -6px;
+                bottom: -16px;
+                left: -1px;
+                right: -1px;
+                @media (max-width: $md3+px) {
+                    top: -14px;
+                    bottom: -18px;
+                    left: -1px;
+                    right: -1px;
+                }
+            }
+        }
+    }
+}

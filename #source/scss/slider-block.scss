@@ -1,0 +1,113 @@
+.slider-title {
+     padding-top: 40px;
+     padding-bottom: 40px;
+     & .title {
+         text-align: center;
+         & h4 {
+             font-family: "Roboto";
+             font-size: 35px;
+             font-weight: 700;
+             color: $fc2;
+             text-transform: uppercase;
+             & span {
+                 font-family: "Raleway";
+                 font-weight: 300;
+                 color: $fco;
+                 text-transform: none;
+             }
+         }
+     }
+ }
+ .slider-item {
+     display: flex;
+     flex-direction: column;
+     margin-top: 30px;
+     color: $fc2;
+     position: relative;
+ }
+ 
+ .slider-text {
+     display: flex;
+     justify-content: center;
+     background-color: #f7f7f7;
+     padding: 40px 30px 40px 30px;
+     max-width: 550px;
+     font-style: italic;
+     margin: 0 auto;
+     text-align: center;
+     font-weight: 400;
+ }
+ 
+ .slider-user {
+     margin-top: 50px;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+	  align-items: center;
+	  & img {
+		border-radius: 50%;
+	  }
+ }
+
+.slider-user__name p {
+         position: relative;
+         padding-left: 38px;
+     }
+     .slider-user__name p::before {
+         position: absolute;
+         content: " ";
+         background-color: #a4a4a4;
+         width: 22px;
+         height: 2px;
+         left: 6px;
+         top: 50%;
+         transform: translate(0, -50%);
+     }
+ 
+ /* Слайдер */
+ /* Слайдер запущен */
+ /* Слайдер с точками */
+ /* Ограничивающая оболочка */
+ 
+ .slick-list {
+     overflow: hidden;
+ }
+ /* Лента слайдов */
+ 
+ .slick-track {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+ }
+ /* Слайд */
+ /* Точки (булиты) */
+ /* Активная точка */
+ /* Элемент точки */
+ /* Конкретный слайдер */
+ 
+ .slider {
+     position: relative;
+	  min-width: 0;
+	  padding: 0 30px 0 30px;
+ }
+ /* Стрелка */
+ 
+ .slick-arrow {
+     position: absolute;
+	  top: 50%;
+	  margin: -50px 0 0 0 ;
+	  z-index: 10;
+	  font-size: 0; /* убрали стандартные кропки с надписями */
+	  width: 20px;
+	  height: 50px;
+ }
+ 
+ .slick-next {
+	  left: 0;
+	  background: url('../img/arrow_left.png') 0 0 /100% no-repeat;
+ }
+ 
+ .slick-prev {
+	  right: 0;
+	  background: url('../img/arrow_right.png') 0 0 /100% no-repeat;
+ }
